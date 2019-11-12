@@ -1,0 +1,12 @@
+language: java
+deploy:
+  - provider: releases
+    name: "KV Adapter build $TRAVIS_BUILD_NUMBER"
+    api_key:
+      secure: XXX
+    file: 
+      - target/kvadapter-bin.zip
+      - target/kvadapter-bin.tar.gz
+    on:
+      repo: envirover/KVAdapter
+    skip_cleanup: true
