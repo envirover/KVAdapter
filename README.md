@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/envirover/KVAdapter.svg?branch=master)](https://travis-ci.org/envirover/KVAdapter)
+
 # Kinesis Video Streams Adapter
 
 Kinesis Video Streams Adapter is a TCP server application that serves

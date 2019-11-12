@@ -6,9 +6,9 @@
 
   <groupId>com.envirover</groupId>
   <artifactId>kvadapter</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
-  <name>Amazon Kinesis Video Streams adapter</name>
+  <name>Amazon Kinesis Video Streams Adapter</name>
   <description>Streams media from Amazon Kinesis Video stream to clients 
   connected to TCP socket.</description>
 
@@ -24,7 +24,7 @@
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>amazon-kinesis-video-streams-parser-library</artifactId>
-      <version>1.0.14</version>
+      <version>1.0.13</version>
     </dependency>
     <dependency>
       <groupId>commons-cli</groupId>
