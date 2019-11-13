@@ -6,6 +6,7 @@ deploy:
     secure: OUtE3bx9x011HthupCwEa9CzGhCMqbt5x5w+R2Vvot4BdwxNDUgW7hr1h2rr5ONivsHsBH3TCYX6kSOr2lKSfQzi9vftySkIVPUjKMgPVk9X7hL3ctvK+BueAJpx0Nuv6R8gWEAUcT1TtgWZ5JtYRzcxUIV7OCTpV1AoKBCWgJEW9gwK8JV0WzpRVPi74emzPu2kHFKzHxZbWyUNuDQR3aQzIOmxhhV1vNz3edhOWvjyVChdlp7G8nxXjgxZziMklL+qLL9fr0Azr32ki12/mlsK6xLPgFZ0r/6eawr/k13HDc719fwRpavbf+SXehbeNNWSsezqVwLWQ8/eup10a0h1SjP+UHOEMhXsOkoNH4nwjxlysA2qtJULV6jx35uDAo29H7S/iWoCnJW2ljza1eqd97+Ck89le8savILa8dRaQWeCeMiRCmVX1Q8MYyQkyl3O6srF+Z29HKfChC9q6UchyZYOeVtETg5j3qnt1CsV+nnl6c+eL+djxbbefWO3HlaGwxJBGLNtdEbdACH4EP0kC96b1dQLY2emhpf+3nxjuGrxu8V6cvpCZ2+ZTZQYTJnaI4qoXyXJDce0HDezgv8PSFXY7okeTt2iINxQ+TrroOb4jk3MWPiRFEjZ6+bsqXbR86bnoJP66fWCc1tfCAz4LqpD3hwviENjydkQB7w=
   file: 
     - target/kvadapter-bin.zip
-    - target/kvadapter-bin.tar-gz
+    - target/kvadapter-bin.tar.gz
   on:
     repo: envirover/KVAdapter
+  skip_cleanup: true
