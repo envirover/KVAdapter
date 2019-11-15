@@ -19,7 +19,7 @@ element that is not supported on Windows.
 
 1. [Create a Kinesis Video stream](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/getting-started.html)
 2. Create [IAM user](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-iam.html) that has permissions to get media
-from the stream and configure the user's AWS access key Id and secret access key in %UserProfile%\.aws\credentials file.
+from the stream and configure the user's AWS access key Id and secret access key in `%UserProfile%\.aws\credentials` file.
 
     ```text
     [default]
@@ -27,10 +27,11 @@ from the stream and configure the user's AWS access key Id and secret access key
     aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
     ```
 
-3. Install JRE 8
+3. Install [Java 8](https://adoptopenjdk.net/)
 4. Unzip [kvadapter-bin.zip](https://github.com/envirover/KVAdapter/releases) to a local folder and set environment variable KVADAPTER_HOME to that folder path.
 5. Install GStreamer.
-   > For use with QGroundControl it's recommended to install GStreamer 1.4.14 from [https://gstreamer.freedesktop.org/data/pkg/windows/](https://gstreamer.freedesktop.org/data/pkg/windows/).
+   > For use with QGroundControl it's recommended to install GStreamer 1.14.4 from [https://gstreamer.freedesktop.org/data/pkg/windows/](https://gstreamer.freedesktop.org/data/pkg/windows/).
+   > Make sure that `C:\gstreamer\1.0\x86_64\bin` is added to `PATH` environment variable.
 
 ## Use
 
