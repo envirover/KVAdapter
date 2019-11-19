@@ -12,8 +12,19 @@ is fairly generic and can be used for other applications.
 
 [Amazon Kinesis Video Streams parser library](https://github.com/aws/amazon-kinesis-video-streams-parser-library)
 has an example for continuously piping the output of GetMedia calls from a
-Kinesis Video stream to GStreamer. However, the example uses fdsrc GStreamer 
+Kinesis Video stream to GStreamer. However, the example uses fdsrc GStreamer
 element that is not supported on Windows.
+
+## Supported Platforms
+
+* Windows 7
+* Windows 8
+* Windows 8.1
+* Windows 10
+
+The adapter is a java application that can run on any sysplatformtem supported
+by java, however that may require some additional configuration not
+described here.
 
 ## Installation
 
@@ -35,10 +46,23 @@ from the stream and configure the user's AWS access key Id and secret access key
 
 ## Use
 
+Enable PowerShell execution on ther machine:
+
+```
+Set-ExecutionPolicy unrestricted
+```
+
 To just start Kinesis Video Streams adapter run PowerShell script kvadapter.ps1:
 
 ```PowerShell
 powershell $Env:KVADAPTER_HOME\bin\kvadapter.ps1 -r <AWS region> -s <stream name>
+```
+
+To start GStreamer pipeline that connects to the adapter on port 4000 and plays
+the streaming video, in a separate PowerShell terminal run:
+
+```
+gst-launch-1.0 -v tcpclientsrc port=4000 ! matroskademux ! avdec_h264 ! autovideosink
 ```
 
 To start Kinesis Video Streams adapter and a GStreamer pipeline that streames 
